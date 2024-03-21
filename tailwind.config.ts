@@ -15,9 +15,11 @@ const config: Config = {
       backgroundImage: {
         "shorten-desktop": "url('./images/bg-shorten-desktop.svg')",
         "shorten-mobile": "url('./images/bg-shorten-mobile.svg')",
+        "boost-mobile": "url('./images/bg-boost-mobile.svg')",
+        "boost-desktop": "url('./images/bg-boost-desktop.svg')",
       },
       colors: {
-        shortlyLightestGray: "#cfcfd5",
+        shortlyLightestGray: "#dedee5",
         shortlyCyan: "#2acfcf",
         shortlyDarkViolet: "#3b3054",
         shortlyRed: "#f46262",

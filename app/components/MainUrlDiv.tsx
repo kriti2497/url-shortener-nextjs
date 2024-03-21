@@ -8,8 +8,8 @@ const MainUrlDiv = () => {
   const [linkValue, setLinkValue] = useState("");
   return (
     <div className=" bg-shortlyLightestGray">
-      <div className="relative flex flex-col gap-4 mx-auto py-10 w-[80%]">
-        <div className="bg-shortlyDarkViolet rounded-lg flex flex-col lg:flex-row bg-shorten-desktop h-full px-6 py-5 lg:py-9 lg:px-12 gap-4">
+      <div className="relative flex flex-col gap-4 mx-auto pt-20 py-10 w-[80%]">
+        <div className="absolute w-full lg:h-auto -top-[15%] bg-shortlyDarkViolet rounded-lg flex flex-col lg:flex-row bg-shorten-mobile lg:bg-shorten-desktop h-auto px-6 py-5 lg:py-9 lg:px-12 gap-4">
           <input
             type="text"
             placeholder="Shoten a link here"

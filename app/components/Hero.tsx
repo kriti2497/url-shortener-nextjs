@@ -6,7 +6,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="grid lg:grid-cols-2">
-      <div className="order-2 flex items-center lg:items-start text-center lg:text-left flex-col gap-2 lg:order-1 px-5 py-12 lg:p-16 justify-center">
+      <div className="order-2 flex items-center lg:items-start text-center lg:text-left flex-col gap-2 lg:order-1 pt-5 pb-32 py-12 lg:p-16 justify-center">
         <div className="text-5xl leading-[3.5rem] lg:text-6xl font-bold text-shortlyVeryDarkViolet lg:leading-[4rem]">
           More than just shorter links
         </div>

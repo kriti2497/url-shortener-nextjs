@@ -31,7 +31,7 @@ const Statistics = () => {
     },
   ];
   return (
-    <div className="px-9 pt-12 pb-40 pt lg:px-12 lg:pt-20 lg:pb-40 bg-shortlyLightestGray">
+    <div className="px-9 pt-12 pb-32 pt lg:px-12 lg:pt-20 lg:pb-40 bg-shortlyLightestGray">
       <div className="mb-24">
         <div className="text-center font-bold text-[28px] lg:text-3xl mb-2 text-shortlyVeryDarkViolet">
           Advanced Statistics
@@ -42,8 +42,8 @@ const Statistics = () => {
         </p>
       </div>
       <div className="relative">
-        <hr className="h-2 bg-shortlyCyan absolute top-2/4 w-full border-0" />
-        <div className="flex flex-col lg:flex-row gap-5 [&>*:nth-child(2)]:top-7 [&>*:nth-child(3)]:top-14">
+        <hr className="h-2 rotate-90 lg:rotate-180 bg-shortlyCyan absolute top-2/4 w-full border-0" />
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-5 [&>*:nth-child(2)]:top-7 [&>*:nth-child(3)]:top-14">
           {analyticsArr.map((analytic: IAnalytics) => (
             <AnalyticsCard value={analytic} key={analytic.title} />
           ))}
