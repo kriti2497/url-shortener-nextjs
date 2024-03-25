@@ -21,7 +21,6 @@ const MainUrlDiv = () => {
       const response = await axios.post("/api/shorten-url", {
         fullUrl: linkValue,
       });
-      console.log(response.data.shortUrl);
       let newArr = [...shortLinksArr];
       newArr.push({
         id: Math.random(),
