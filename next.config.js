@@ -4,7 +4,7 @@ module.exports = {
     return [
       {
         source: "/api/:path",
-        destination: "http://localhost:3001/:path", // Proxy to Backend
+        destination: "https://link-shortly.vercel.app/:path", // Proxy to Backend
       },
     ];
   },

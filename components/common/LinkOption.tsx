@@ -28,7 +28,7 @@ const LinkOption: React.FC<{ linkValues: LinkCreated }> = ({ linkValues }) => {
         <button
           className={`${
             isCopied ? "bg-shortlyDarkViolet" : "bg-shortlyCyan"
-          } text-white w-full rounded px-3 py-2 text-sm`}
+          } text-white rounded px-3 py-2 text-sm`}
           onClick={() => copyToClipboard()}
         >
           {isCopied ? "Copied!" : "Copy"}

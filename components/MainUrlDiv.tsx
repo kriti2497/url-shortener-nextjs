@@ -40,7 +40,7 @@ const MainUrlDiv = () => {
         <div
           className={`absolute w-full lg:h-auto -top-[20%] bg-shortlyDarkViolet rounded-lg flex flex-col lg:flex-row bg-shorten-mobile lg:bg-shorten-desktop h-auto px-6 py-5 lg:py-9 lg:px-12 gap-4 items-start`}
         >
-          <div className="flex-1">
+          <div className="flex-1 w-full">
             <input
               type="text"
               placeholder="Shoten a link here"
