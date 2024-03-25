@@ -1,4 +1,4 @@
-import Button from "./common/button";
+import Button from "./common/Button";
 import IllustrationWorkingImg from "../public/images/illustration-working.svg";
 import Image from "next/image";
 import React from "react";

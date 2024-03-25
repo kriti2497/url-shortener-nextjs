@@ -1,4 +1,4 @@
-import Button from "./common/button";
+import Button from "./common/Button";
 import React from "react";
 
 const BoostLinks = () => {

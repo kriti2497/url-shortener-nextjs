@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-import Button from "./common/button";
+import Button from "./common/Button";
 import Image from "next/image";
 import logo from "../public/images/logo.svg";
 
