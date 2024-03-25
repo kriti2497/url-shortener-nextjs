@@ -1,5 +1,5 @@
 import Button from "./common/button";
-import IllustrationWorkingImg from "../images/illustration-working.svg";
+import IllustrationWorkingImg from "../public/images/illustration-working.svg";
 import Image from "next/image";
 import React from "react";
 

@@ -1,16 +1,16 @@
-import FacebookIcon from "../images/icon-facebook.svg";
-import FacebookIconHover from "../images/icon-facebook-hover.svg";
+import FacebookIcon from "../public/images/icon-facebook.svg";
+import FacebookIconHover from "../public/images/icon-facebook-hover.svg";
 import FooterLinks from "./common/FooterLinks";
 import Image from "next/image";
-import InstagramIcon from "../images/icon-instagram.svg";
-import InstagramIconHover from "../images/icon-instagram-hover.svg";
-import Logo from "../images/logowhite.svg";
-import PinterestIcon from "../images/icon-pinterest.svg";
-import PinterestIconHover from "../images/icon-pinterest-hover.svg";
+import InstagramIcon from "../public/images/icon-instagram.svg";
+import InstagramIconHover from "../public/images/icon-instagram-hover.svg";
+import Logo from "../public/images/logowhite.svg";
+import PinterestIcon from "../public/images/icon-pinterest.svg";
+import PinterestIconHover from "../public/images/icon-pinterest-hover.svg";
 import React from "react";
 import Socials from "./Socials";
-import TwitterIcon from "../images/icon-twitter.svg";
-import TwitterIconHover from "../images/icon-twitter-hover.svg";
+import TwitterIcon from "../public/images/icon-twitter.svg";
+import TwitterIconHover from "../public/images/icon-twitter-hover.svg";
 
 const Footer = () => {
   const features = ["Link Shortening", "Branded Links", "Analytics"];

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 import Button from "./common/button";
 import Image from "next/image";
-import logo from "../images/logo.svg";
+import logo from "../public/images/logo.svg";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -39,8 +39,9 @@ const Header = () => {
         <div className="lg:hidden">
           <i
             className="fa-solid fa-bars text-2xl text-shortlyGrayishViolet"
+            aria-hidden
             onClick={() => setOpenMenu(!openMenu)}
-          ></i>
+          />
         </div>
       </div>
       <div

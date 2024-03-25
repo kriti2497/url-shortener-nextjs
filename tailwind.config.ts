@@ -13,10 +13,10 @@ const config: Config = {
       //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       // },
       backgroundImage: {
-        "shorten-desktop": "url('./images/bg-shorten-desktop.svg')",
-        "shorten-mobile": "url('./images/bg-shorten-mobile.svg')",
-        "boost-mobile": "url('./images/bg-boost-mobile.svg')",
-        "boost-desktop": "url('./images/bg-boost-desktop.svg')",
+        "shorten-desktop": "url('../public/images/bg-shorten-desktop.svg')",
+        "shorten-mobile": "url('../public/images/bg-shorten-mobile.svg')",
+        "boost-mobile": "url('../public/images/bg-boost-mobile.svg')",
+        "boost-desktop": "url('../public/images/bg-boost-desktop.svg')",
       },
       colors: {
         shortlyLightestGray: "#dedee5",
