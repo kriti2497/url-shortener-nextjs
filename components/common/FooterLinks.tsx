@@ -9,7 +9,10 @@ const FooterLinks: React.FC<{ title: string; arr: string[] }> = ({
       <p className="font-semibold text-lg mb-2">{title}</p>
       <div className="flex flex-col gap-2">
         {arr.map((eachFeature: string) => (
-          <div className="font-light text-sm text-shortlyGray hover:text-shortlyCyan cursor-pointer">
+          <div
+            key={eachFeature}
+            className="font-light text-sm text-shortlyGray hover:text-shortlyCyan cursor-pointer"
+          >
             {eachFeature}
           </div>
         ))}

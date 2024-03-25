@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: "/shorten",
-  //       destination: "https://ismaelc-bitly.p.rapidapi.com/v3/shorten", // Proxy to Backend
-  //     },
-  //   ];
-  // },
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path",
+        destination: "http://localhost:3001/:path", // Proxy to Backend
+      },
+    ];
+  },
 };
