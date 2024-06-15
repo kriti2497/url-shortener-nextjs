@@ -1,19 +1,21 @@
-import BoostLinks from "../components/BoostLinks";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import MainUrlDiv from "../components/MainUrlDiv";
-import Statistics from "../components/Statistics";
+import BoostLinks from "@/components/BoostLinks";
+import Hero from "@/components/Hero";
+import MainUrlDiv from "@/components/MainUrlDiv";
+import React from "react";
+import Statistics from "@/components/Statistics";
+import { getAllUrls } from "@/actions/db.actions";
 
-export default function Home() {
+const Home = async () => {
+  const data = await getAllUrls();
+
   return (
-    <>
-      <Header />
+    <div>
       <Hero />
       <MainUrlDiv />
       <Statistics />
       <BoostLinks />
-      <Footer />
-    </>
+    </div>
   );
-}
+};
+
+export default Home;

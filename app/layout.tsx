@@ -1,5 +1,7 @@
 import "./globals.css";
 
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 
@@ -33,7 +35,11 @@ export default function RootLayout({
           crossOrigin="anonymous"
         ></script>
       </head>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

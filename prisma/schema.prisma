@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGO_URL")
+}
+
+model url_links {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  clicks   Int
+  fullUrl  String
+  shortUrl String @unique(map: "shortUrl_1")
+
+  @@map("url-links")
+}

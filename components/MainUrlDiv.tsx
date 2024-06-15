@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 import LinkOption from "./common/LinkOption";
-import axios from "axios";
+import { createUrlServer } from "@/actions/server.actions";
 
 export interface LinkCreated {
   id: number;
@@ -18,19 +18,17 @@ const MainUrlDiv = () => {
 
   const shortenLink = async () => {
     try {
-      const response = await axios.post("/api/shorten-url", {
-        fullUrl: linkValue,
-      });
+      const response = await createUrlServer(linkValue);
       let newArr = [...shortLinksArr];
       newArr.push({
         id: Math.random(),
         originalLink: linkValue,
-        newLink: response.data.shortUrl,
+        newLink: response.shortUrl,
       });
       setShortLinksArr(newArr);
       setLinkValue("");
     } catch (error: any) {
-      setError(error.response.data);
+      setError(error.message);
     }
   };
 
