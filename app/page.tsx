@@ -3,11 +3,8 @@ import Hero from "@/components/Hero";
 import MainUrlDiv from "@/components/MainUrlDiv";
 import React from "react";
 import Statistics from "@/components/Statistics";
-import { getAllUrls } from "@/actions/db.actions";
 
-const Home = async () => {
-  const data = await getAllUrls();
-
+const Home = () => {
   return (
     <div>
       <Hero />
